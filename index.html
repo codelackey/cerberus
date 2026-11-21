@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerberus</title>
+  <style>
+    :root {
+      --bg: #faf9f6;
+      --text: #1f1e1c;
+      --muted: #66635e;
+      --accent: #8c3b2b;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161514;
+        --text: #e6e3dd;
+        --muted: #9e9a93;
+        --accent: #d47a68;
+      }
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 4rem 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      max-width: 34rem;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 2.25rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      margin: 0 0 0.25rem 0;
+    }
+
+    h1 sup a {
+      font-size: 0.9rem;
+    }
+
+    .dedication {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .stanza {
+      margin: 0 0 1.4rem 0;
+    }
+
+    sup a {
+      color: var(--accent);
+      text-decoration: none;
+      padding-left: 0.15rem;
+    }
+
+    sup a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid color-mix(in srgb, var(--muted) 30%, transparent);
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 0.35rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      font-size: 0.8rem;
+      margin-top: 1.5rem;
+    }
+
+    .copyright a {
+      margin-left: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Cerberus<sup id="ref-1"><a href="#fn-1" aria-label="Footnote 1">1</a></sup></h1>
+      <p class="dedication">for V.</p>
+    </header>
+
+    <article>
+      <p class="stanza">
+        Sullen Hades wanders these tenebrous warrens,<br>
+        Bereft of sun and hope,<br>
+        Awaiting the return of Persephone.
+      </p>
+
+      <p class="stanza">
+        I, too, pine for our beloved queen.
+      </p>
+
+      <p class="stanza">
+        When autumn summons her descent,<br>
+        At her feet I will rest my several heads<br>
+        (Upon her hem,<br>
+        The scent of earth above!)<br>
+        And as she scratches behind my many ears—<br>
+        Though the world turn barren and cold,<br>
+        Though Demeter weep—<br>
+        I will contentedly<br>
+        Thump my serpent tail.
+      </p>
+    </article>
+
+    <footer>
+      <p id="fn-1">
+        <sup>1</sup> <em>Author’s note: Written from the perspective of a decidedly chimeric pooch (first curr-son?!), this turgid verse is necessarily and tautologically doggerel.</em>
+        <a href="#ref-1" aria-label="Back to title">↩</a>
+      </p>
+      <p class="copyright">
+        &copy; 2026 <a href="https://github.com/codelackey">codelackey</a>. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
+
